@@ -3,6 +3,9 @@
  */
 package com.crm.boApp;
 
+import com.crm.utils.Delimiter;
+import com.crm.utils.Message;
+
 /**
  * @author Aurel
  *
@@ -10,10 +13,15 @@ package com.crm.boApp;
 public class BankApp {
 
 	/**
-	 * @param args
+	 * @param args 
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Message print = new Message(Delimiter.EQUAL);
+		String str = "aaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+		System.out.println(print.delimiterString(str.length()));
+		System.out.println(str);
+		System.out.println(print.delimiterString(str.length(), 1));
+
 
 	}
 
